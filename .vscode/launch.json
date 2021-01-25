@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        { 
+            // Start browser: /opt/microsoft/msedge-dev/microsoft-edge-dev --remote-debugging-port=9222
+            "name": "Attach to Edge (dev)",
+            "port": 9222,
+            "request": "attach",
+            "type": "pwa-msedge",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Edge (dev) index.html",
+            "request": "launch",
+            "type": "pwa-msedge",
+            "file": "${workspaceFolder}${pathSeparator}index.html",
+            "runtimeExecutable": "/opt/microsoft/msedge-dev/microsoft-edge-dev",
+        },
+        // {
+        //   "name": "Launch Firefox index.html",
+        //   "type": "firefox",
+        //   "request": "launch",
+        //   "reAttach": true,
+        //   "file": "${workspaceFolder}${pathSeparator}index.html",
+        //   ""
+        // },
+        // {
+        //   "name": "Launch Firefox index.html",
+        //   "type": "firefox",
+        //   "request": "launch",
+        //   "reAttach": true,
+        //   "file": "${workspaceFolder}${pathSeparator}index.html",
+        //   "firefoxExecutable": "/usr/bin/firefox",
+        //   "firefoxArgs": ["--start-debugger-server"],
+        // },
+        //{
+        //     "name": "Launch Firefox (dev) index.html",
+        //     "type": "firefox",
+        //     "request": "launch",
+        //     "reAttach": true,
+        //     "file": "${workspaceFolder}${pathSeparator}index.html",
+        //     "firefoxExecutable": "/opt/firefox/firefox",
+        //     "firefoxArgs": ["--start-debugger-server"]
+        // },
+        // {
+        //     "name": "Launch Firefox (dev) localhost",
+        //     "type": "firefox",
+        //     "request": "launch",
+        //     "reAttach": true,
+        //     "url": "http://localhost/index.html",
+        //     "firefoxExecutable": "/opt/firefox/firefox",
+        //     "webRoot": "${workspaceFolder}"
+        // },
+        {
+            "name": "Attach Firefox index.html",
+            "type": "firefox",
+            "request": "attach",
+        },
+        {
+            // Start browser: /opt/firefox/firefox --start-debugger-server
+            "name": "Attach Firefox (dev)",
+            "type": "firefox",
+            "request": "attach",
+            "firefoxExecutable": "/opt/firefox/firefox",
+        }
+    ]
+}
