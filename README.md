@@ -1,11 +1,11 @@
 # first-x (first-cross)
-This project is an experimenting with VS Code browser development/debugging on Windows 10 WSL & CMD & GIT-Bash (Windows terminal) and Ubuntu 20.04 (bash).
+This project is an experiment for VS Code browser development/debugging on Windows 10 WSL & CMD & GIT-Bash (Windows terminal) and Ubuntu 20.04 (bash).
 
 Testing VS Code launch/attach debuggability of Windows-Chrome, Ubuntu-Chromium, Windows-Edge, Ubuntu-Edge (dev),
 Windows-Firefox, Ubuntu-Firefox and Ubuntu-Firefox developer edition.
 
 ## Windows 
-All browsers seems to work fine with VS Code debugging. 
+All browsers seems to work fine with VS Code debugging. (the current launch.json is only fit for Ubuntu)
 
 ## Ubuntu 
 Surprisingly, best so far is the dev preview edition of edge for linux. Firefox and Firefox developer edition crashes using "action": "launch" but can be made to work for "attatch". 
